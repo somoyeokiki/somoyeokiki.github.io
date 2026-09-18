@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Somoye Okikijesu — Fiction Writer</title>
+<meta name="description" content="Somoye Okikijesu is a Nigerian fiction writer. Character-driven stories about relationships, ambition, family, and identity.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css">
+<style>
+  .hero{ padding:64px 0 60px; }
+  .hero-name{
+    font-family:var(--display);
+    font-weight:600;
+    font-size:clamp(40px,7.5vw,64px);
+    line-height:1.05;
+  }
+  .hero-tagline{
+    font-family:var(--display);
+    font-style:italic;
+    font-size:clamp(17px,2.4vw,20px);
+    color:var(--rust);
+    margin-top:10px;
+    margin-bottom:22px;
+  }
+
+  /* Featured story */
+  .featured{
+    background:var(--paper-deep);
+  }
+  .featured-label{ margin-bottom:18px; }
+  .featured-title{
+    font-family:var(--display);
+    font-weight:600;
+    font-size:clamp(30px,5vw,44px);
+    line-height:1.1;
+  }
+  .featured-alt{
+    font-family:var(--display);
+    font-style:italic;
+    color:var(--ink-soft);
+    font-size:15px;
+    margin:6px 0 18px;
+  }
+  .featured-meta{
+    font-size:12.5px;
+    font-weight:600;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    margin-bottom:18px;
+  }
+  .featured-syn{ max-width:520px; color:var(--ink-soft); font-size:16px; margin-bottom:26px; }
+
+  /* Currently writing */
+  .cw-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    flex-wrap:wrap;
+    gap:10px;
+    border-top:1px solid var(--rule);
+    padding-top:20px;
+    margin-top:20px;
+  }
+  .cw-title{ font-family:var(--display); font-weight:600; font-size:18px; }
+  .cw-status{ font-size:13px; color:var(--ink-soft); }
+
+  /* Selected stories mini list */
+  .mini-list{ display:flex; flex-direction:column; }
+  .mini-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    gap:16px;
+    padding:16px 0;
+    border-top:1px solid var(--rule);
+    flex-wrap:wrap;
+  }
+  .mini-row:last-child{ border-bottom:1px solid var(--rule); }
+  .mini-title{ font-family:var(--display); font-weight:600; font-size:19px; }
+  .mini-type{ font-size:12px; color:var(--ink-soft); text-transform:uppercase; letter-spacing:0.06em; }
+</style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a class="brand" href="/">Somoye Okikijesu</a>
+    <div class="links">
+      <a class="nav-link current" href="/">Home</a>
+      <a class="nav-link" href="/stories/">Stories</a>
+      <a class="nav-link" href="/projects/">Projects</a>
+      <a class="nav-link" href="/writing/">Writing</a>
+      <a class="nav-link" href="/about/">About</a>
+      <a class="nav-link" href="/contact/">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-name">Somoye Okikijesu</div>
+    <div class="hero-tagline">Fiction writer &middot; Serialized stories &middot; Short fiction</div>
+    <p class="lead">I write character-driven stories about relationships, ambition, family, identity, and the complicated choices people make. My work is rooted in contemporary Nigerian life, written for readers who want stories that keep them turning the page.</p>
+    <div class="btn-row" style="margin-top:26px;">
+      <a class="btn" href="/stories/">Read my stories</a>
+      <a class="btn-outline" href="/about/">About me</a>
+    </div>
+  </div>
+</header>
+
+<section class="featured">
+  <div class="wrap">
+    <span class="eyebrow featured-label">Featured Story</span>
+    <div class="featured-title">A Beginning, Not a Game</div>
+    <div class="featured-alt">also published as Rent Free</div>
+    <div class="featured-meta">Serialized Fiction &middot; 7 Episodes &middot; Ongoing &middot; Alternating POV</div>
+    <p class="featured-syn">Some relationships begin before either person realises what they are becoming. A story told through alternating points of view, following two people whose lives keep circling back to each other.</p>
+    <a class="text-link" href="/stories/a-beginning-not-a-game/">Read Episode 1 &rarr;</a>
+
+    <div class="cw-row">
+      <div>
+        <span class="eyebrow" style="margin-bottom:4px;">Currently Writing</span>
+        <div class="cw-title">A Beginning, Not a Game</div>
+      </div>
+      <div class="cw-status">7 episodes published</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Selected Stories</h2>
+    <div class="mini-list">
+      <div class="mini-row">
+        <div>
+          <div class="mini-title">A Beginning, Not a Game</div>
+          <div class="mini-type">Serialized Fiction</div>
+        </div>
+        <a class="text-link" href="/stories/a-beginning-not-a-game/">Read &rarr;</a>
+      </div>
+      <div class="mini-row">
+        <div>
+          <div class="mini-title">Waterline</div>
+          <div class="mini-type">Short Story</div>
+        </div>
+        <a class="text-link" href="https://inknaija.com/article/w-fe5db6" target="_blank" rel="noopener">Read &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Other Writing</h2>
+    <p class="lead">Alongside the fiction, I write essays, articles, and content work. <a class="text-link" href="/writing/">See writing &rarr;</a></p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Get in Touch</h2>
+    <p class="lead">Interested in my writing, collaboration, or publishing opportunities?</p>
+    <div class="btn-row" style="margin-top:20px;">
+      <a class="btn" href="mailto:somoyeokiki@gmail.com">Email me</a>
+      <a class="btn-outline" href="/stories/">Read my work</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <div class="fname">Somoye Okikijesu</div>
+      <div class="ftag">Fiction writer &middot; Serialized stories &middot; Short fiction</div>
+    </div>
+    <div class="fcopy">&copy; 2026 Somoye Okikijesu</div>
+  </div>
+</footer>
+
+</body>
+</html>

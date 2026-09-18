@@ -1,0 +1,171 @@
+/* ============================================================
+   Somoye Okikijesu — Author Site
+   Shared design system
+   ============================================================ */
+
+:root{
+  --paper:      #F1E8D8;
+  --paper-deep: #E4D6BC;
+  --ink:        #2A2318;
+  --ink-soft:   #6B6152;
+  --rust:       #A8452E;
+  --rust-deep:  #7E331F;
+  --rule:       rgba(42,35,24,0.14);
+
+  --display: 'Newsreader', Georgia, 'Times New Roman', serif;
+  --body-font: 'Public Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --max: 760px;
+}
+
+*{ box-sizing:border-box; margin:0; padding:0; }
+html{ scroll-behavior:smooth; }
+
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--body-font);
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+
+a{ color:inherit; }
+img{ max-width:100%; display:block; }
+
+.wrap{
+  max-width:var(--max);
+  margin:0 auto;
+  padding:0 28px;
+}
+
+/* ---------- Nav ---------- */
+
+.site-nav{
+  border-bottom:1px solid var(--rule);
+}
+
+.site-nav .wrap{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding-top:22px;
+  padding-bottom:22px;
+  flex-wrap:wrap;
+  gap:14px;
+}
+
+.site-nav .brand{
+  font-family:var(--display);
+  font-weight:600;
+  font-size:19px;
+  text-decoration:none;
+  color:var(--ink);
+}
+
+.site-nav .links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:22px;
+}
+
+.site-nav .links > * {
+  margin-right:22px;
+}
+
+.site-nav a.nav-link{
+  font-size:12.5px;
+  font-weight:600;
+  letter-spacing:0.1em;
+  text-transform:uppercase;
+  text-decoration:none;
+  color:var(--ink-soft);
+  padding-bottom:3px;
+  border-bottom:1px solid transparent;
+}
+
+.site-nav a.nav-link:hover,
+.site-nav a.nav-link.current{
+  color:var(--rust);
+  border-color:var(--rust);
+}
+
+/* ---------- Generic sections ---------- */
+
+section{ padding:56px 0; }
+section + section{ border-top:1px solid var(--rule); }
+
+.eyebrow{
+  font-size:11.5px;
+  font-weight:700;
+  letter-spacing:0.14em;
+  text-transform:uppercase;
+  color:var(--rust);
+  margin-bottom:10px;
+  display:block;
+}
+
+h1,h2,h3{ font-family:var(--display); font-weight:600; }
+
+h2{ font-size:clamp(26px,3.6vw,34px); margin-bottom:26px; }
+
+p{ margin-bottom:16px; }
+p:last-child{ margin-bottom:0; }
+
+.lead{ font-size:17px; color:var(--ink-soft); max-width:560px; }
+
+/* ---------- Buttons / links ---------- */
+
+.btn{
+  display:inline-block;
+  background:var(--rust);
+  color:var(--paper);
+  text-decoration:none;
+  padding:13px 24px;
+  font-size:13px;
+  font-weight:600;
+  letter-spacing:0.03em;
+}
+.btn:hover{ background:var(--rust-deep); }
+
+.btn-outline{
+  display:inline-block;
+  border:1px solid var(--ink);
+  color:var(--ink);
+  text-decoration:none;
+  padding:12px 23px;
+  font-size:13px;
+  font-weight:600;
+  letter-spacing:0.03em;
+}
+.btn-outline:hover{ border-color:var(--rust); color:var(--rust); }
+
+.btn-row > *{ margin-right:14px; margin-bottom:10px; }
+
+.text-link{
+  text-decoration:none;
+  color:var(--rust);
+  font-weight:600;
+  border-bottom:1px solid var(--rust);
+  padding-bottom:1px;
+}
+.text-link:hover{ color:var(--rust-deep); border-color:var(--rust-deep); }
+
+/* ---------- Footer ---------- */
+
+footer{
+  border-top:1px solid var(--rule);
+  padding:36px 0 48px;
+}
+footer .wrap{
+  display:flex;
+  justify-content:space-between;
+  align-items:baseline;
+  flex-wrap:wrap;
+  gap:12px;
+}
+footer .fname{ font-family:var(--display); font-weight:600; font-size:15px; }
+footer .ftag{ font-size:12px; color:var(--ink-soft); }
+footer .fcopy{ font-size:11px; color:var(--ink-soft); }
+
+@media (prefers-reduced-motion: reduce){ html{ scroll-behavior:auto; } }
+:focus-visible{ outline:2px solid var(--rust); outline-offset:3px; }
